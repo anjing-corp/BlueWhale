@@ -1,0 +1,30 @@
+BlueWhale-v1.1
+Program Name:Wig Terminal
+RegNum:Reg1 & Reg2
+Instruction Set Commands:READ WIG
+Body:
+READ
+Wig Terminal-v1 for BlueWhale-v1.1
+RUN {
+use Reg1 to store the Program Files
+use Reg2 to store WIG Decision Files
+}
+RUN {
+Output "WigTerm>"
+WigTerm = Shell for WigTerm
+WigTerm Shell Commands
+con (Situation) = used to ask advice
+con = RUN {
+Instruction Set:WIG
+Body: [Situation]
+}
+if (Situation) = used to ask probability
+or (Situation) = used to chooses at least one and explain why
+or = RUN {
+Instruction Set: WIG OR
+Body: [Situation]
+}
+exit = Return to BlueWhale Shell
+Shell Rules:
+• if command is not legal command Output “Bad Command”
+BluWhale-v1.1
